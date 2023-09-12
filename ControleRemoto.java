@@ -6,7 +6,6 @@ private int volume;
 private boolean ligado;
 private boolean tocando;
 private boolean mudar;
-private boolean avhdmi;
 //métodos especiais
 
 public ControleRemoto() {
@@ -14,7 +13,6 @@ this.volume = 50;
 this.ligado = false;
 this.tocando = false;
 this.mudar = true;
-this.avhdmi = false;
 
 }
 
@@ -75,8 +73,8 @@ System.out.println ("======= MENU =======");
 System.out.println ("----Está ligado?---" + this.getLigado());
 System.out.println ("----Está tocando?----" + this.getTocando());
 System.out.println ("----Mudar de canal----" + this.getMudar());
-System.out.println ("----Mudar para AV----" + this.getavhdmi ());
-System.out.println ("----Mudar para HDMI----" + this.getavhdmi());
+System.out.println ("----Mudar para AV----" + this.getMudar());
+System.out.println ("----Mudar para HDMI----" + this.getMudar());
 System.out.print("Volume:"+ this.getVolume());
 for (int i = 0;i <= this.getVolume (); i+=10 ) {
 System.out.print ("||");
